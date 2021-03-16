@@ -1,0 +1,29 @@
+html, .reactPlayer {
+    scroll-snap-type: y mandatory;
+}
+
+.app{
+    height: 100vh;
+    background-color:black;
+    display: grid;
+    place-items:center;
+}
+
+.appVideos{
+    position: relative;
+    height:800px;
+    border-radius:20px;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+/*Hide scrollbar Chrome, Safari, Opera*/
+.appVideos::-webkit-scrollbar{
+    display:none;
+}
+
+/*Hide scrollbar IE, Edge, Firefox*/
+.appVideos{
+    -ms-overflow-style:none; /*IE Edge*/
+    scrollbar-width:none; /*Firefox*/
+}

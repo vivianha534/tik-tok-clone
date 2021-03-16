@@ -1,9 +1,13 @@
 import './App.css';
+import Video from "./components/Video/Video.js"
 
 function App() {
   return (
-    <div className="App">
-      
+    <div className="app">
+        <div className="appVideos">
+            <Video className="reactPlayer"/>
+            <Video className="reactPlayer"/>
+        </div>
     </div>
   );
 }
